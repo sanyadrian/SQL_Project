@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Sql_project"
+version = "0.0.1"
+authors = [
+  { name="Oleksandr Adrianov", email="adrianovoleksandr@gmail.com" },
+]
+description = "SQL_project"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: Flask",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9.6"
+flask = "^2.1.2"
+flasgger= '0.9.5'
+Flask-RESTful='0.3.9'
+SQLAlchemy = '1.4.40'
+pytest = '7.1.2'

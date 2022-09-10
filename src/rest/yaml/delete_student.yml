@@ -1,0 +1,24 @@
+  produces:
+    - "application/json"
+    - "application/xml"
+  delete:
+    summary: Delete student by id.
+    consumes:
+      - application/json
+    parameters:
+      - in: body
+        name: student
+        description: delete student.
+        schema:
+          properties:
+            student_id:
+              type: integer
+    responses:
+      '200':
+        description: OK
+        content:
+          text/plain:
+            schema:
+              properties:
+                student_id:
+                  type: integer
