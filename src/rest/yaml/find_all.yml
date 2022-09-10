@@ -1,0 +1,8 @@
+This is SQL Project
+---
+  produces:
+  - "application/json"
+  - "application/xml"
+  responses:
+    200:
+      description: General information

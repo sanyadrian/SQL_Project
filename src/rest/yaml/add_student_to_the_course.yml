@@ -1,0 +1,28 @@
+  produces:
+    - "application/json"
+    - "application/xml"
+  post:
+    summary: Add a student to the course.
+    consumes:
+      - application/json
+    parameters:
+      - in: body
+        name: Add student
+        description: Add student to the course.
+        schema:
+          properties:
+            student_id:
+              type: integer
+            course_id:
+              type: integer
+    responses:
+      '200':
+        description: OK
+        content:
+          text/plain:
+            schema:
+              properties:
+                student_id:
+                  type: integer
+                course_id:
+                  type: integer
